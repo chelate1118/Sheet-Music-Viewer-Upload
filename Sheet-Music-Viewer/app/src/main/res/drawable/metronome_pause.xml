@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/metronome_play_background"/>
+    <item android:gravity="center">
+        <shape
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:shape="rectangle">
+            <size
+                android:width="15dp"
+                android:height="15dp" />
+            <solid android:color="#EAEAEA"/>
+        </shape>
+    </item>
+</layer-list>

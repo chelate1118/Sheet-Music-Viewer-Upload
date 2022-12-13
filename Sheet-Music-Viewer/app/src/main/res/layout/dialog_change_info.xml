@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/info_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:background="@drawable/color_button"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Information"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:background="#00ABB3"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/info_save"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:background="@drawable/color_button"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="35dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:text="Title"
+            android:layout_marginEnd="40dp"/>
+
+        <EditText
+            android:id="@+id/info_input_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textSize="15sp"
+            android:background="@null"
+            android:textAlignment="textEnd"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:text="Composer"
+            android:layout_marginEnd="40dp"/>
+
+        <EditText
+            android:id="@+id/info_input_composer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textSize="15sp"
+            android:background="@null"
+            android:textAlignment="textEnd"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/info_composer_dialog_show"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/ic_baseline_more_vert_24"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:id="@+id/info_delete_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="25dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="25dp"
+        android:paddingBottom="10dp"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:text="Delete"
+            android:textAlignment="center"
+            android:textColor="#CF0A0A"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

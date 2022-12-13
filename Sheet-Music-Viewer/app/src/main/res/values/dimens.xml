@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="metronome_circle_stroke">3dp</dimen>
+    <dimen name="metronome_circle_size">70dp</dimen>
+    <dimen name="main_button_size">50dp</dimen>
+    <dimen name="main_button_margin">15dp</dimen>
+</resources>

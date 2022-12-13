@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:id="@+id/main_linear_layout">
+
+    <FrameLayout
+        android:id="@+id/main_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/mainViewerFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ToggleButton
+                android:id="@+id/metronome_on_off"
+                android:layout_width="@dimen/main_button_size"
+                android:layout_height="@dimen/main_button_size"
+                android:background="@drawable/main_button_background"
+                android:layout_marginBottom="@dimen/main_button_margin"
+                android:layout_marginEnd="@dimen/main_button_margin"
+                android:textOn="M"
+                android:textOff="M"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/tuner_on"
+                android:layout_width="@dimen/main_button_size"
+                android:layout_height="@dimen/main_button_size"
+                android:background="@drawable/main_button_background"
+                android:layout_marginEnd="@dimen/main_button_margin"
+                android:text="T"
+                app:layout_constraintEnd_toStartOf="@+id/metronome_on_off"
+                app:layout_constraintTop_toTopOf="@+id/metronome_on_off" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/metronomeFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0" />
+</LinearLayout>

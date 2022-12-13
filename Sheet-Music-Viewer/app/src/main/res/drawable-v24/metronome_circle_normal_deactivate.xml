@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <stroke
+        android:color="#273300"
+        android:width="@dimen/metronome_circle_stroke"/>
+
+    <solid
+        android:color="#4F6600"/>
+
+    <size
+        android:width="@dimen/metronome_circle_size"
+        android:height="@dimen/metronome_circle_size"/>
+</shape>

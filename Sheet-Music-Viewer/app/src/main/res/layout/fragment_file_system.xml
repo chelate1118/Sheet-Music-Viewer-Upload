@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".files.FileSystemFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_color">
+
+            <ImageView
+                android:id="@+id/main_logo"
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+        </LinearLayout>
+        <ListView
+            android:id="@+id/file_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#00000000"/>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/file_add_button"
+            android:layout_width="@dimen/main_button_size"
+            android:layout_height="@dimen/main_button_size"
+            android:layout_marginStart="@dimen/main_button_margin"
+            android:layout_marginBottom="@dimen/main_button_margin"
+            android:background="@drawable/main_button_background"
+            android:text="+"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/file_filter_button"
+            android:layout_width="@dimen/main_button_size"
+            android:layout_height="@dimen/main_button_size"
+            android:layout_marginStart="@dimen/main_button_margin"
+            android:background="@drawable/main_filter_button"
+            app:layout_constraintStart_toEndOf="@id/file_add_button"
+            app:layout_constraintBottom_toBottomOf="@id/file_add_button"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
